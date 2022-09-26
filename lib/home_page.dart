@@ -24,11 +24,6 @@ class _MyHomePageState extends State<MyHomePage> {
   final TextEditingController name = TextEditingController();
   final TextEditingController phone = TextEditingController();
   final TextEditingController updatePhone = TextEditingController();
-  final item = UserModel(
-      name: "Lorem ipsum dolor sit amet",
-      age: 1020,
-      phone: "Lorem ipsum dolor sit amet",
-      email: "Lorem ipsum dolor sit amet");
 
   Future<void> deleteData(UserModel data) async {
     await Amplify.DataStore.delete(data).catchError(print);
@@ -132,15 +127,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('Email : ${data?.email.toString()}' ?? ''),
-                            Text('Phone : ${data?.phone.toString()}' ?? ''),
-                            Text('Age : ${data?.age.toString()}' ?? ''),
+                            Text('Email : ${data?.email.toString()}'),
+                            Text('Phone : ${data?.phone.toString()}'),
+                            Text('Age : ${data?.age.toString()}'),
                           ],
                         ),
                       ),
                     ),
                   );
-                  ;
                 });
           }),
       floatingActionButton: FloatingActionButton(
