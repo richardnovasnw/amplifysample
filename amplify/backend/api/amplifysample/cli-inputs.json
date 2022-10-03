@@ -5,9 +5,8 @@
     "serviceName": "AppSync",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "expirationTime": 300,
-      "apiKeyExpirationDate": "2023-07-19T10:04:17.198Z",
-      "keyDescription": "da2-wrb766whozfa7f235l7v7nygly"
+      "keyDescription": "api key description",
+      "expirationTime": 30
     },
     "additionalAuthTypes": [
       {
@@ -18,7 +17,6 @@
       "defaultResolutionStrategy": {
         "type": "AUTOMERGE"
       }
-    },
-    "gqlSchemaPath": "/Users/richard/projects/my_projects/amplifysample/amplify/backend/api/amplifysample/schema.graphql"
+    }
   }
 }
